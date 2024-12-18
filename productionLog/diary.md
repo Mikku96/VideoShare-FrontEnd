@@ -34,7 +34,7 @@ self-hosted product for "fun", it is not a focus. I do not expect more than few 
 
         - Assume now that a sprint is 1-2 weeks long, cannot really decide yet as situations change
 
-        - **In total, about 8 Sprints should be enough**
+        - In total, about 8 Sprints should be enough
 
 ### Roles
 
@@ -70,12 +70,12 @@ self-hosted product for "fun", it is not a focus. I do not expect more than few 
 
         - Especially when working with "preview video" generation... Can Javascript call FFMPEG?
 
-    - Self-hosted, so **no need** for cloud services (Render etc.)
+    - Self-hosted, so no need for cloud services (Render etc.)
 
 ## Product Backlog
 
 Items in this table are approximately in order of importance.
-** Minimal Viable Product** ends at "Preview Videos" line
+**Minimal Viable Product** ends at "Preview Videos" line
 
 | Description        | Status      | Sprint | Comments/Parts                                                          |
 |--------------------|-------------|--------|-------------------------------------------------------------------------|
