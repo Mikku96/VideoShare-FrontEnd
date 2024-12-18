@@ -5,10 +5,10 @@
 1) User can browse through a video catalogue hosted on a back end, and search for videos
 2) User can rename and add tags to the videos for ease of search
 3) User can log in - without logging in, possibly the website is not accessable
-4) User can view a compilation of a video as a preview (30s long, generated at back end)
-5) User can view the complete video, and download it
-6) User can view information about the video - length, size, view count, download count
-7) User can add a LIKE to video - requires multiple account setup, so NOT A FOCUS
+4) User can view a compilation of a video as a preview (30s long, generated at back end) to quickly check video content
+5) User can view the complete video, and download it for personal use
+6) User can view information about the video - length, size, view count, download count - to understand its content better
+7) User can add a LIKE to video - requires multiple account setup, so NOT A FOCUS - to understand the quality of video
 7) User can find a random video depending on few settings: Tagged/untagged, named/not named, preview generated/no preview yet
 8) User can reorder the videos at their end by: length, views, upvotes...
 
@@ -111,6 +111,6 @@ Write down progress report, any major problems and feelings toward the product
 
 ### 18.12.2024
 
-- Began work by producing this diary, repository, Product Backlog and basic visual prototype
+- Produced this diary, repository, Product Backlog and basic visual prototype
 
 - See above for the first visual prototype and Product Backlog
