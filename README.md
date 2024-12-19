@@ -26,12 +26,14 @@ Back End should also be running - I will see that the Back End has some test vid
 
 Progress is tracked with a [diary](./productionLog/diary.md) file and with the Product Backlog below.
 
+[First Sprint Backlog](https://trello.com/b/SSmLGpMc/videoshare-sprint-1)
+
 | Description        | Status      | Sprint | Comments/Parts                                                          |
 |--------------------|-------------|--------|-------------------------------------------------------------------------|
-| Main page          | 🔨 | 1      | Basic buttons, thumbnail grid, header                                   |
+| Main page          | ✅ | 1      | Basic buttons, thumbnail grid, header                                   |
 | Sample data base   | Not started | 1      | Pick videos, manually create preview/thumbnail                          |
 | Logic to videos    | 🔨 | 1      | Clicking on thumbnail opens video Modal; buttons... basic for now!      |
-| Navigation         | Not started | 1?       | Videos/page... 20? 50?... loading new set?                              |
+| Navigation         | 🔨 | 1?       | Videos/page... 20? 50?... loading new set?                              |
 | Basic search       | Not started |        | Searchbar, logic of filter                                              |
 | Info database      | Not started |        | Tags/Names/Likes(?)/Comments... data that cannot be obtained from video |
 | Info input         | Not started |        | Input boxes when editing data related to a video                        |
