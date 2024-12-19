@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Component imports
-import MainHeader from "./Header/MainHeader.jsx";
+import MainPage from "./MainPage.jsx";
 
 // Styling import
 import "./index.css";
@@ -11,7 +11,7 @@ import "./index.css";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainHeader />,
+    element: <MainPage />,
     children: [
     ],
   },
