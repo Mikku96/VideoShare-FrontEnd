@@ -139,3 +139,5 @@ Write down progress report, any major problems and feelings toward the product
     - Mainly did this to test Flex
 
 <img src="./progress2.png" width="800px">
+
+At the end of the day, "Main Page" task from the Product Backlog was marked as done ✅.
