@@ -131,3 +131,11 @@ Write down progress report, any major problems and feelings toward the product
     - Background color theme... not 100% happy but will do (want it to be dark)
 
 <img src="./progress1.png" width="800px">
+
+- Added an initial "concept" of thumbnail grid
+
+    - Currenly uses "sample data" that is not related to any videos (just to play with flex and the grid)
+
+    - Clicking a thumbnail opens a video modal
+
+<img src="./progress2.png>" width="800px">
