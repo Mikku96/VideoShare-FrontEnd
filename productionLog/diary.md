@@ -114,3 +114,16 @@ Write down progress report, any major problems and feelings toward the product
 - Produced this diary, repository, Product Backlog and basic visual prototype
 
 - See above for the first visual prototype and Product Backlog
+
+
+### 19.12.2024
+
+- Began creating Sprint Backlog
+
+- Decided to pick first four Product Backlog tasks for the sprint (Navigation as a special goal)
+
+<img src="./sprint1.png" width="800px">
+
+- Started work on the main page (set up Vite, Tailwind etc.)
+
+    - Header bar
