@@ -132,10 +132,10 @@ Write down progress report, any major problems and feelings toward the product
 
 <img src="./progress1.png" width="800px">
 
-- Added an initial "concept" of thumbnail grid
+- Add initial grid for thumbnails with title and status "lights"
 
-    - Currenly uses "sample data" that is not related to any videos (just to play with flex and the grid)
+    - Uses mock data, so a lot of work has to be done later
 
-    - Clicking a thumbnail opens a video modal
+    - Mainly did this to test Flex
 
-<img src="./progress2.png>" width="800px">
+<img src="./progress2.png" width="800px">
