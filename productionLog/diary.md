@@ -126,4 +126,16 @@ Write down progress report, any major problems and feelings toward the product
 
 - Started work on the main page (set up Vite, Tailwind etc.)
 
-    - Header bar
+    - Header bar, mockup of search bar and a submit button
+
+    - Background color theme... not 100% happy but will do (want it to be dark)
+
+<img src="./progress1.png" width="800px">
+
+- Add initial grid for thumbnails with title and status "lights"
+
+    - Uses mock data, so a lot of work has to be done later
+
+    - Mainly did this to test Flex
+
+<img src="./progress2.png" width="800px">
