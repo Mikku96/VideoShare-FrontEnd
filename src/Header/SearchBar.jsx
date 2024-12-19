@@ -7,13 +7,6 @@ export default function SearchBar({}) {
 
     const[searchText, setSearchText] = useState("");
 
-    function updateSearch(event) {
-        const target = event.target.name;
-        const value = event.target.value;
-        setSearchText(value);
-        console.log(value)
-    }
-
     function submitForm(event) {
         event.preventDefault();
         console.log("Submit");
@@ -26,7 +19,8 @@ export default function SearchBar({}) {
                     <input type="text"
                      className="flex-grow outline-none bg-transparent text-xl"
                      placeholder="Search"
-                     onChange={(event) => updateSearch(event)}
+                     value={searchText}
+                     onChange={(event) => setSearchText(event.target.value)}
                     />
                 </div>
                 <div className="flex flex-row flex-wrap justify-end">
@@ -34,8 +28,7 @@ export default function SearchBar({}) {
                         buttonName={"Submit"}
                         type={"submit"}
                         tailWindClass = {"text-xl"}
-                    >
-                    </Button>
+                    />
                 </div>
             </div>
         </form>

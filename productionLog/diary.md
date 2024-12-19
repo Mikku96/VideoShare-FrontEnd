@@ -126,4 +126,8 @@ Write down progress report, any major problems and feelings toward the product
 
 - Started work on the main page (set up Vite, Tailwind etc.)
 
-    - Header bar
+    - Header bar, mockup of search bar and a submit button
+
+    - Background color theme... not 100% happy but will do (want it to be dark)
+
+<img src="./progress1.png" width="800px">
