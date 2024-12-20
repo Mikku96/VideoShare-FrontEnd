@@ -24,7 +24,6 @@ import NavButton from "./NavButton";
 
 export default function NavBar( {videosPerPage, amountOfVideos, currentPage, setCurrentPage} ) {
 
-    console.log(currentPage)
     // How many pages needed? Amount / how many per page... + 1 if not divisible!
     const neededPages = amountOfVideos % videosPerPage === 0 ? 
     Math.floor(amountOfVideos / videosPerPage) : 
@@ -42,6 +41,11 @@ export default function NavBar( {videosPerPage, amountOfVideos, currentPage, set
             setCurrentPage(currentPage + 1);
         } else if (event.target.name === "toPrevious") {
             setCurrentPage(currentPage - 1);
+        } else {
+            const newPage = prompt("Please enter a page number", 1);
+            if (isNaN(Number(newPage))) {
+                setCurrentPage(1);
+            } else {setCurrentPage(newPage)}
         }
     }
     let pages = [];
@@ -53,13 +57,13 @@ export default function NavBar( {videosPerPage, amountOfVideos, currentPage, set
                 changeSet={changeSet} 
                 />)
         } else {
-            if (i <= currentPage+2 && i >= currentPage - 2) {
+            if ((i >= Number(currentPage) - 2 && i <= Number(currentPage) + 2)) {
                 pages.push(<NavButton 
                     type={i}
                     position={i}
                     changeSet={changeSet} 
                     />)
-                }
+            }
         } 
     }
 
@@ -75,12 +79,19 @@ export default function NavBar( {videosPerPage, amountOfVideos, currentPage, set
                 type={"toPrevious"}
                 changeSet={changeSet}
                 />
+                <NavButton
+                type={"search"}
+                changeSet={changeSet}/>
             </>           
             }
+
             {pages}
 
             {Number(currentPage) !== neededPages &&
             <>
+                <NavButton
+                type={"search"}
+                changeSet={changeSet}/>
                 <NavButton
                 type={"toNext"}
                 changeSet={changeSet}

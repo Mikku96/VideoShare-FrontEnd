@@ -4,7 +4,8 @@ export default function NavButton ( {position=0, type, changeSet} ) {
         "toStart": "|<-",
         "toEnd": "->|",
         "toPrevious": "<-",
-        "toNext": "->"
+        "toNext": "->",
+        "search": "..."
     }
 
     const navButtonStyle =`
