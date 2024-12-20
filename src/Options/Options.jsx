@@ -1,16 +1,16 @@
-import MultiChoise from "./MultiChoise.jsx";
+import MultiChoice from "./MultiChoice.jsx";
 
 export default function Options ( {howManyShown, setHowManyShown, orderBy, setOrderBy} ) {
 
     return (
         <div className="flex flex-row flex-wrap justify-evenly">
-          <MultiChoise
+          <MultiChoice
           chosenOption={howManyShown}
-          setChoise={setHowManyShown}
+          setChoice={setHowManyShown}
           />
-          <MultiChoise 
+          <MultiChoice 
           chosenOption={orderBy}
-          setChoise={setOrderBy}
+          setChoice={setOrderBy}
           />
         </div>
     );

@@ -15,13 +15,12 @@ import {useState, useEffect} from "react";
 
 import Thumbnail from "./Thumbnail.jsx";
 
-export default function Grid ( {setChosenVideo, howManyShown, filteredVideoInfos} ) {
+export default function Grid ( {filteredVideoInfos, setChosenVideo, howManyShown, amountOfVideos} ) {
 
     // Run this, when user changes ordering settings etc.
     /*useEffect(() => {
         const filteredVideos = ""; etc.
     }, [orderChange]);*/
-
     return (
         <>
         <ul className="flex flex-row flex-wrap gap-y-5 gap-x-5 m-12 justify-center">

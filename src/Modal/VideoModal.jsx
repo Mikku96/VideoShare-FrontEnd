@@ -12,14 +12,14 @@ export default function VideoModal({ chosenVideo, showVideo, setShowVideo, setCh
     }
 
     return (
-        <Modal isOpen={showVideo} id="videoModal" className=""
+        <Modal isOpen={showVideo} id="videoModal" className="bg-black"
 >            <Button
                 buttonName={"Close"}
                 runFunction={() => closeModal()}
                 type={"button"}
                 tailWindClass="text-white"
             />
-            <p>{chosenVideo}</p>
+            <p className="text-gray-50">{chosenVideo}</p>
         </Modal>
     );
 }
