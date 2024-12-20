@@ -15,27 +15,7 @@ import {useState, useEffect} from "react";
 
 import Thumbnail from "./Thumbnail.jsx";
 
-import sampleImage from "../../public/sample.jpg";
-
-export default function Grid ( {setChosenVideo, howManyShown} ) {
-
-    // Array of objects
-    const [filteredVideoInfos, setVideoInfos] = useState([]);
-
-    useEffect(() => {
-        let videoData = [];
-        for (let i = 0; i < 50; i++) {
-            videoData.push({
-                id: i, 
-                thumbnail:sampleImage, 
-                name: "Cat Video "+i, 
-                stats: {views: 100+i, likes: 10+i},
-                state: [true, false, false],
-                url: "url that gets the video data such as tags and the VIDEO itself"
-            })
-        }
-        setVideoInfos(videoData);
-    }, []);
+export default function Grid ( {setChosenVideo, howManyShown, filteredVideoInfos} ) {
 
     // Run this, when user changes ordering settings etc.
     /*useEffect(() => {
