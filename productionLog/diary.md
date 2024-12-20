@@ -150,3 +150,15 @@ At the end of the day, "Main Page" task from the Product Backlog was marked as d
     - Decided to make it a multipurpose one - reusable with "Sort by" later on
 
 <img src="./progress3.png" width="800px">
+
+- Had some minor problems related to the display of navigation buttons
+
+    - IF we need buttons 1 - 5... everything OK!
+
+    - But if we need more than that... have to limit it so, that we show for example: 3 4 5 6 7 (when on page 5)
+
+- Managed to fix this, but it is not 100% ready. Good enough for now
+
+- User can also move to a specific page through "..." buttons
+
+<img src="./progress4.png" width="800px">
