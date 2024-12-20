@@ -17,16 +17,14 @@ import Thumbnail from "./Thumbnail.jsx";
 
 import sampleImage from "../../public/sample.jpg";
 
-export default function Grid ( {setChosenVideo} ) {
+export default function Grid ( {setChosenVideo, howManyShown} ) {
 
     // Array of objects
     const [filteredVideoInfos, setVideoInfos] = useState([]);
 
-    const [howManyShown, setHowManyShown] = useState(25);
-
     useEffect(() => {
         let videoData = [];
-        for (let i = 0; i < 25; i++) {
+        for (let i = 0; i < 50; i++) {
             videoData.push({
                 id: i, 
                 thumbnail:sampleImage, 
@@ -46,7 +44,7 @@ export default function Grid ( {setChosenVideo} ) {
 
     return (
         <>
-        <ul className="flex flex-row flex-wrap gap-y-5 gap-x-5 m-12 justify-center min-h-screen">
+        <ul className="flex flex-row flex-wrap gap-y-5 gap-x-5 m-12 justify-center">
             {filteredVideoInfos
               .filter((_, index) => howManyShown > index)
               .map((videoInfo) => (
