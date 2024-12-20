@@ -1,7 +1,7 @@
-export default function MultiChoise ( {chosenOption, setChoise} ) {
+export default function MultiChoice ( {chosenOption, setChoice} ) {
     
     function updateOption(event) {
-        setChoise({...chosenOption, choise: event.target.value});
+        setChoice({...chosenOption, choice: event.target.value});
     }
 
     return (
@@ -9,7 +9,7 @@ export default function MultiChoise ( {chosenOption, setChoise} ) {
         <label className="text-white">{chosenOption.title}</label>
         <select
           name={chosenOption.title}
-          value={chosenOption.choise}
+          value={chosenOption.choice}
           onChange={(event) => updateOption(event)}
         >
           {chosenOption.options

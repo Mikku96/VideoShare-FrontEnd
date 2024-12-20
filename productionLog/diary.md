@@ -162,3 +162,5 @@ At the end of the day, "Main Page" task from the Product Backlog was marked as d
 - User can also move to a specific page through "..." buttons
 
 <img src="./progress4.png" width="800px">
+
+- Added logic to navigation - which videos are shown
