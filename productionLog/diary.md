@@ -164,3 +164,9 @@ At the end of the day, "Main Page" task from the Product Backlog was marked as d
 <img src="./progress4.png" width="800px">
 
 - Added logic to navigation - which videos are shown
+
+"Navigation" task from the Product Backlog was marked as done ✅.
+
+- Started compiling actual sample data base (few videos)
+
+    - Create thumbnails, preview videos etc.
