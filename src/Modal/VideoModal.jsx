@@ -2,6 +2,8 @@ import Modal from "react-modal";
 import { useState } from "react";
 import Button from "../Button.jsx";
 
+import ReactPlayer from "react-player/file";
+
 export default function VideoModal({ chosenVideo, showVideo, setShowVideo, setChosenVideo }) {
 
     Modal.setAppElement("#root");
@@ -20,6 +22,9 @@ export default function VideoModal({ chosenVideo, showVideo, setShowVideo, setCh
                 tailWindClass="text-white"
             />
             <p className="text-gray-50">{chosenVideo}</p>
+            <ReactPlayer 
+            controls = {true}
+            url={chosenVideo} />
         </Modal>
     );
 }

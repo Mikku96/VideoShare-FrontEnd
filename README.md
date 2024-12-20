@@ -31,7 +31,7 @@ Progress is tracked with a [diary](./productionLog/diary.md) file and with the P
 | Description        | Status      | Sprint | Comments/Parts                                                          |
 |--------------------|-------------|--------|-------------------------------------------------------------------------|
 | Main page          | ✅ | 1      | Basic buttons, thumbnail grid, header                                   |
-| Sample data base   | 🔨 | 1      | Pick videos, manually create preview/thumbnail                          |
+| Sample data base   | ✅ | 1      | Pick videos, manually create preview/thumbnail                          |
 | Logic to videos    | 🔨 | 1      | Clicking on thumbnail opens video Modal; buttons... basic for now!      |
 | Navigation         | ✅ | 1       | Videos/page... 20? 50?... loading new set?                              |
 | Basic search       | Not started |        | Searchbar, logic of filter                                              |

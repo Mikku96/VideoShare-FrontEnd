@@ -170,3 +170,17 @@ At the end of the day, "Main Page" task from the Product Backlog was marked as d
 - Started compiling actual sample data base (few videos)
 
     - Create thumbnails, preview videos etc.
+
+    - Preview videos are excluded from the repo
+
+- Managed to load the unique thumbnails from the public folder
+
+    - OF COURSE this is NOT the actual way the app will work but need something to start testing video functionalities
+
+- Next, tried to load the video into a [Video component](https://www.npmjs.com/package/react-player#supported-media)
+
+- Seems to be working as expected
+
+    - Include one sample video in .webm format, and end the day (rest will be created when Modal is done)
+
+<img src="./progress5.png" width="800px">

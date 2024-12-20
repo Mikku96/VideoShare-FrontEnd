@@ -27,7 +27,7 @@ export default function SearchBar({}) {
                     <Button
                         buttonName={"Submit"}
                         type={"submit"}
-                        tailWindClass = {"text-xl"}
+                        tailWindClass = {"text-xl hover:cursor-pointer"}
                     />
                 </div>
             </div>

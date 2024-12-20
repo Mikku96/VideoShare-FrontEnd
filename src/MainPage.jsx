@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+const thumbnails = import.meta.glob('../public/*.png');
 import VideoModal from "./Modal/VideoModal.jsx";
 import MainHeader from "./Header/MainHeader.jsx";
 import Grid from "./VideoGrid/Grid.jsx";
@@ -10,7 +10,7 @@ import sampleImage from "../public/sample.jpg";
 
 export default function MainPage() {
 
-  const[amountOfVideos, setAmountOfVideos] = useState(50);
+  const[amountOfVideos, setAmountOfVideos] = useState("");
   const[currentPage, setCurrentPage] = useState(1);
   const [howManyShown, setHowManyShown] = useState({
     choice: 5,
@@ -34,6 +34,7 @@ export default function MainPage() {
   const [allVideos, setVideoInfos] = useState([]);
   const [filteredVideos, setFilteredVideos] = useState([]);
 
+  /*
   useEffect(() => {
     const loadData = async () => {
       let videoData = [];
@@ -53,13 +54,42 @@ export default function MainPage() {
     }
     setLoading(true);
     loadData();
+  }, []);*/
+
+  // For now, using this to load test videos:
+
+  useEffect(() => {
+    const loadData = async () => {
+      
+      let videoData = [];
+      let i = 0;
+      for (const thumbnail in thumbnails) {
+        i++;
+        videoData.push({
+          id: i, 
+          thumbnail:thumbnail, 
+          name: "Cat Video " + i, 
+          stats: {views: 100+i, likes: 10+i},
+          state: [true, false, false],
+          url: `../public/sample${i}.webm`
+      })
+      }
+
+      setAmountOfVideos(i);
+      setVideoInfos(videoData);
+      setFilteredVideos(videoData);
+      setLoading(false);
+    }
+    setLoading(true);
+    loadData();
   }, []);
+
 
   useEffect(() => {
     setFilteredVideos(allVideos.slice(
       (currentPage - 1)*howManyShown.choice, (currentPage)*howManyShown.choice
     ));
-  }, [currentPage, allVideos])
+  }, [currentPage, allVideos, howManyShown])
 
   useEffect(() => {
     if (chosenVideo !== "") {
