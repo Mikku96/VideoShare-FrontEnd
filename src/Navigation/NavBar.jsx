@@ -43,8 +43,12 @@ export default function NavBar( {videosPerPage, amountOfVideos, currentPage, set
             setCurrentPage(currentPage - 1);
         } else {
             const newPage = prompt("Please enter a page number", 1);
-            if (isNaN(Number(newPage))) {
+            // If user inputs anything but a number between 1 - max..
+            // Deal with the input!
+            if (isNaN(Number(newPage)) || Number(newPage) <= 0) {
                 setCurrentPage(1);
+            } else if(Number(newPage) > neededPages) {
+                setCurrentPage(neededPages);
             } else {setCurrentPage(newPage)}
         }
     }
