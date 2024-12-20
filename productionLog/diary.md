@@ -115,7 +115,6 @@ Write down progress report, any major problems and feelings toward the product
 
 - See above for the first visual prototype and Product Backlog
 
-
 ### 19.12.2024
 
 - Began creating Sprint Backlog
@@ -141,3 +140,13 @@ Write down progress report, any major problems and feelings toward the product
 <img src="./progress2.png" width="800px">
 
 At the end of the day, "Main Page" task from the Product Backlog was marked as done ✅.
+
+### 20.12.2024
+
+- Begin working on Navigation buttons - basic functionality for test data
+
+- To easily manage the page number, had to first create "Videos per page" multi-choice component!
+
+    - Decided to make it a multipurpose one - reusable with "Sort by" later on
+
+<img src="./progress3.png" width="800px">
