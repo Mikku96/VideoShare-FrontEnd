@@ -11,14 +11,14 @@ import DataState from "./DataState.jsx";
 
 export default function Thumbnail ({videoInfo, setChosenVideo}) {
 
-    function clickHandler(event) {
-        setChosenVideo(videoInfo.url);
+    function clickHandler() {
+        setChosenVideo(videoInfo);
     }
 
     return (
         <li className="flex flex-col w-2/12" key={videoInfo.id}>
             <img className="hover:cursor-pointer" src={videoInfo.thumbnail}
-            onClick={(event) => clickHandler(event)} />
+            onClick={() => clickHandler()} />
             <div className="flex flex-row flex-wrap justify-between">
                 <p className="text-white">{videoInfo.name}</p>
                 <DataState 

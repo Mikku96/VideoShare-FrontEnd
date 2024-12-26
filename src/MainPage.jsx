@@ -19,7 +19,16 @@ export default function MainPage() {
   });
 
   const[showVideo, setShowVideo] = useState(false);
-  const[chosenVideo, setChosenVideo] = useState("");
+  const[chosenVideo, setChosenVideo] = useState({
+    id: 0, 
+    thumbnail:"", 
+    name: "", 
+    stats: {views: 0, likes: 0},
+    state: [false, false,false],
+    tags: [""],
+    previewUrl: ``,
+    fullUrl: ``
+  });
 
 
   const [orderBy, setOrderBy] = useState({
@@ -71,7 +80,9 @@ export default function MainPage() {
           name: "Cat Video " + i, 
           stats: {views: 100+i, likes: 10+i},
           state: [true, false, false],
-          url: `../public/sample${i}.webm`
+          tags: ["cat", "funny", "meow", "orange", "imitation", "this_be_a_long_tag_to_annoy_me"],
+          previewUrl: `../public/sample${i}.webm`,
+          fullUrl: `../public/full${i}.webm`
       })
       }
 
@@ -92,7 +103,7 @@ export default function MainPage() {
   }, [currentPage, allVideos, howManyShown])
 
   useEffect(() => {
-    if (chosenVideo !== "") {
+    if (chosenVideo.name !== "") {
       setShowVideo(true);
     }
 }, [chosenVideo]);

@@ -184,3 +184,33 @@ At the end of the day, "Main Page" task from the Product Backlog was marked as d
     - Include one sample video in .webm format, and end the day (rest will be created when Modal is done)
 
 <img src="./progress5.png" width="800px">
+
+### 26.12.2024
+
+- Continued work after Christmas
+
+    - Other responsibilities are also weighting down on the dev process
+
+- Decided to finish the first Sprint on this day
+
+    - Components for the Video Modal (title, video div, tag list)
+
+    - Also, thought about making the Video modal into a child (router)
+
+    - Enables the user to obtain a shareable link to the video...
+
+    - "Easy" to implement - change Modal to an Outlet
+
+    - BUT! Remembering the previous search when returning... Session Storage or similar!
+
+- Modal is not scrollable, and the body behind modal scrolls... have to think about this
+
+    - IF I stay with modals, have to make a scrollable modal (not immediate solution)
+
+    - IF I change to router... have to deal with "Close" button logic
+
+- Added a Download button when the full video is shown
+
+    - EASILY can add same functionality to preview but I believe it is not needed
+
+- Uses fetch, so... maybe usable in the end product?
