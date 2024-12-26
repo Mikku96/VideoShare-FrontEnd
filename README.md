@@ -32,13 +32,13 @@ Progress is tracked with a [diary](./productionLog/diary.md) file and with the P
 |--------------------|-------------|--------|-------------------------------------------------------------------------|
 | Main page          | ✅ | 1      | Basic buttons, thumbnail grid, header                                   |
 | Sample data base   | ✅ | 1      | Pick videos, manually create preview/thumbnail                          |
-| Logic to videos    | 🔨 | 1      | Clicking on thumbnail opens video Modal; buttons... basic for now!      |
+| Logic to videos    | ✅ | 1      | Clicking on thumbnail opens video Modal; buttons... basic for now!      |
 | Navigation         | ✅ | 1       | Videos/page... 20? 50?... loading new set?                              |
-| Basic search       | Not started |        | Searchbar, logic of filter                                              |
-| Info database      | Not started |        | Tags/Names/Likes(?)/Comments... data that cannot be obtained from video |
-| Info input         | Not started |        | Input boxes when editing data related to a video                        |
-| Refine work        | Not started |        | Connect previous parts and refine i.e. Advanced Search and tag click navigation                  |
-| Display video info | Not started |        | Length, likes, view count                                               |
+| Basic search       | 🔨 | 2       | Searchbar, logic of filter                                              |
+| Info database      | 🔨 | 2      | Tags/Names/Likes(?)/Comments... data that cannot be obtained from video |
+| Info input         | 🔨 | 2       | Input boxes when editing data related to a video                        |
+| Refine work        | 🔨 | 2       | Connect previous parts and refine i.e. Advanced Search and tag click navigation                  |
+| Display video info | 🔨 | 2       | Length, likes, view count                                               |
 | Login logic        | Not started |        | Simple check if user has access to the site                             |
 | Study Back End     | Not started |        | Begin creating a Back End solution for video/data hosting               |
 | Connect Front/Back | Not started |        | Move data from Front End to Back, and connect                           |

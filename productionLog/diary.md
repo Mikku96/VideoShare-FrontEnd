@@ -115,7 +115,7 @@ Write down progress report, any major problems and feelings toward the product
 
 - See above for the first visual prototype and Product Backlog
 
-### 19.12.2024
+### 19.12.2024 - Start of \#1 Sprint
 
 - Began creating Sprint Backlog
 
@@ -187,11 +187,11 @@ At the end of the day, "Main Page" task from the Product Backlog was marked as d
 
 ### 26.12.2024
 
-- Continued work after Christmas
+Continued work after Christmas
 
     - Other responsibilities are also weighting down on the dev process
 
-- Decided to finish the first Sprint on this day
+Decided to finish the first Sprint on this day
 
     - Components for the Video Modal (title, video div, tag list)
 
@@ -203,14 +203,110 @@ At the end of the day, "Main Page" task from the Product Backlog was marked as d
 
     - BUT! Remembering the previous search when returning... Session Storage or similar!
 
-- Modal is not scrollable, and the body behind modal scrolls... have to think about this
+Modal is not scrollable, and the body behind modal scrolls... have to think about this
 
     - IF I stay with modals, have to make a scrollable modal (not immediate solution)
 
     - IF I change to router... have to deal with "Close" button logic
 
-- Added a Download button when the full video is shown
+Added a Download button when the full video is shown
 
     - EASILY can add same functionality to preview but I believe it is not needed
 
-- Uses fetch, so... maybe usable in the end product?
+    - Uses fetch, so... maybe usable in the end product?
+
+<img src="./progress6.png" width="800px">
+
+THIS marks the spot where the first Sprint was completed!
+
+### \#1 Sprint Review (18.12. - 26.12.2024)
+
+What were the goals:
+
+    - Get a working frame for the website
+
+    - Add sample videos with a grid display of thumbnails
+
+    - Ability to navigate if there are a lot of videos
+
+    - Video Modal for display of single videos info (includes name, preview/full video, tag holder)
+
+What was achieved:
+
+    - All the goals were fullfilled in a manner that overall feel resembles the end product
+
+    - The actual functionalities are "tests"...
+
+What was left unfinished?
+
+    - Some scaling problems when resolution is small
+
+    - Full videos for other sample videos (NOT NECESSARY!)
+
+    - Many of the functions are still "tests"
+
+Were there any problems to be solved in the future?:
+
+    - Currently data is held in "public" folder... NOT optimal, a lot of work to be done when "fetching" in the future
+    
+Should something in the plan be changed?:
+
+    - VideoModal or Video Child (router)... have to think about this
+
+    - Color scheme does not feel final
+
+Next steps:
+
+    - REALLY think about what is the upcoming JSON file format
+
+        - What key-value pairs are necessary (date, length, tags...)
+
+        - Read from file, currently it is generated in the code!
+
+    - Info input
+
+        - User can edit the title of the video and the tags - make changes in the JSON file!
+
+    - Sample videos contain names and tags... COULD build the search functionality
+
+    - Refine the current work
+
+    - IF I have time, add video info (views, thumbs up statistic)
+
+        - No functionality necessary yet!
+
+### \#1 Sprint Retro (18.12. - 26.12.2024)
+
+What went well:
+
+    - I feel like, I really can build such a product by myself
+
+    - On the first few days, a lot of progress was made "easily"
+
+    - Diary and product progress tracking!
+
+Is there something that still needs some adjustments:
+
+    - Very easy to fall into the concept of "it just works" -> Need to understand and think about how the components NEED TO WORK when the own Back End is developed
+
+    - Somethings are undecided, and maybe the "VideoModal" is a bad idea... rather than find solutions to Modal problems, should first decide if Router will be used!
+
+Was something even harmful to the progress?:
+
+    - Christmas... motivation loss due to it
+
+    - Other responsibilities... cannot really talk about them here
+
+    - Getting back on track! Possibly extend the length of the next Sprint if necessary (NOT REAL SCRUM MENTALITY!)
+
+**After the review and retro!**
+
+- Marked first sprint tasks as done both in Trello, and in the Product Backlog (main page Readme.md)
+
+- Picked new tasks to the next Sprint
+
+    - Basic Search, Info database, Info input, Refined work, Display video info(?)
+
+- Will create the second Sprint Backlog tomorrow (and add link to the mainpage then)
+
+### 27.12.2024 - Start of \#2 Sprint
