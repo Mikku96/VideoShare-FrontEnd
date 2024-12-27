@@ -310,3 +310,13 @@ Was something even harmful to the progress?:
 - Will create the second Sprint Backlog tomorrow (and add link to the mainpage then)
 
 ### 27.12.2024 - Start of \#2 Sprint
+
+OK! Woke up around 05:00 (military time)... Had to deal with a lot of paper work related to other life... projects
+
+    - Basically had only time to build few ideas to the Sprint Backlog, but IT can evolve! So its fine
+
+    - Sadly did not have time to really code today
+
+<img src="./sprint2.png" width="800px">
+
+Here's the  [Second Sprint Backlog](https://trello.com/b/vmm60EgD/videoshare-sprint-2)

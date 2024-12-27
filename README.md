@@ -30,6 +30,8 @@ Progress is tracked with a [diary](./productionLog/diary.md) file and with the P
 
 [First Sprint Backlog](https://trello.com/b/SSmLGpMc/videoshare-sprint-1)
 
+[Second Sprint Backlog](https://trello.com/b/vmm60EgD/videoshare-sprint-2)
+
 | Description        | Status      | Sprint | Comments/Parts                                                          |
 |--------------------|-------------|--------|-------------------------------------------------------------------------|
 | Main page          | ✅ | 1      | Basic buttons, thumbnail grid, header                                   |
