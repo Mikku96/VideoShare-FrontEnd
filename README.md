@@ -4,7 +4,9 @@ Front End for my web based video sharing platform.
 ## Description
 React based Front End for video platform utilizing own Back End (link later). The goal was to have a website where users can **tag and name videos** obtained from a database, find videos they are interested in and download them. In addition, filtering and ordering of the videos for ease of use were considered. Back End side processes information about the videos and generates preview clips as necessary.
 
-```Image of site comes here, when ready```
+```Image of site comes here, when ready.```
+
+[See diary for images for now!](./productionLog/diary.md)
 
 ## Used technologies and techniques
 
