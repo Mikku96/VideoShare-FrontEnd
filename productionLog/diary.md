@@ -320,3 +320,28 @@ OK! Woke up around 05:00 (military time)... Had to deal with a lot of paper work
 <img src="./sprint2.png" width="800px">
 
 Here's the  [Second Sprint Backlog](https://trello.com/b/vmm60EgD/videoshare-sprint-2)
+
+### 2.1.2025
+
+A quick update due to the holiday season - no progress has been made due to the Winter holidays and also other life situations
+
+NAS/hosting/security solutions have been considered during this time
+
+    - A NAS solution would cost at LEAST ~1000€ (~18Tb of data with RAID systems implemented)
+
+    - Minimum investment at this point (depending on WHO hosts the files): ~400€ (without NAS)
+
+    - Discussed security concepts with the product holders (people who will use the system)
+
+    - Due to security concerns, and due to expected network usage...
+
+    - We concluded that a VPN or some other 'limited' network solution is required
+
+    - Increases security WITHOUT the need of log-in etc. in the Front End!
+
+    - THIS actually helps the development! I do not have to spend time implementing EXTREMELY simple login system (a login that can be EASILY bypassed due to the lack of experience)
+
+    - Hamachi and other such "free" solutions are considered and discussed on a later date
+
+The product development IS NOT endangered... but consideration MUST be done before public release!
+
