@@ -1,0 +1,88 @@
+{
+    "videos": [
+        {
+            "id": 0, 
+            "originalName": "sample1",
+            "definedName": "agg",
+            "stats": {"views": 0, "likes": 0},
+            "tags":["cat", "funny", "meow", "orange", "imitation", "this_be_a_long_tag_to_annoy_me"],
+            "comments":[],
+            "thumbnail":"../public/sample1.png",
+            "previewVideo":"../public/sample1.webm",
+            "fullURL":"../public/full1.webm",
+            "videoLength":"00:00:10",
+            "videoSize":"945kb",
+            "videoDate":"2024-12-20T14:51:10Z"
+        },
+        {
+            "id": 1, 
+            "originalName": "sample2",
+            "definedName": "",
+            "stats": {"views": 0, "likes": 0},
+            "tags":[],
+            "comments":[],
+            "thumbnail":"../public/sample2.png",
+            "previewVideo":"",
+            "fullURL":"../public/sample2.webm",
+            "videoLength":"00:00:06",
+            "videoSize":"338kb",
+            "videoDate":"2024-12-26T08:02:07Z"
+        },
+        {
+            "id": 2, 
+            "originalName": "sample3",
+            "definedName": "",
+            "stats": {"views": 0, "likes": 0},
+            "tags":[],
+            "comments":[],
+            "thumbnail":"../public/sample3.png",
+            "previewVideo":"",
+            "fullURL":"../public/sample3.webm",
+            "videoLength":"00:00:08",
+            "videoSize":"1.71Mb",
+            "videoDate":"2024-12-26T08:02:38Z"
+        },
+        {
+            "id": 3, 
+            "originalName": "sample4",
+            "definedName": "",
+            "stats": {"views": 0, "likes": 0},
+            "tags":[],
+            "comments":[],
+            "thumbnail":"../public/sample4.png",
+            "previewVideo":"",
+            "fullURL":"../public/sample4.webm",
+            "videoLength":"00:00:04",
+            "videoSize":"668kb",
+            "videoDate":"2024-12-26T08:03:01Z"
+        },
+        {
+            "id": 4, 
+            "originalName": "sample5",
+            "definedName": "",
+            "stats": {"views": 0, "likes": 0},
+            "tags":[],
+            "comments":[],
+            "thumbnail":"../public/sample5.png",
+            "previewVideo":"",
+            "fullURL":"../public/sample5.webm",
+            "videoLength":"00:00:07",
+            "videoSize":"603kb",
+            "videoDate":"2024-12-26T08:03:18Z"
+        },
+        {
+            "id": 5, 
+            "originalName": "sample6",
+            "definedName": "",
+            "stats": {"views": 0, "likes": 0},
+            "tags":[],
+            "comments":[],
+            "thumbnail":"../public/sample6.png",
+            "previewVideo":"",
+            "fullURL":"../public/sample6.webm",
+            "videoLength":"00:00:05",
+            "videoSize":"363kb",
+            "videoDate":"2024-12-26T08:03:40Z"
+        }
+    ]
+}

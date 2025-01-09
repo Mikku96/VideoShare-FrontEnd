@@ -345,3 +345,36 @@ NAS/hosting/security solutions have been considered during this time
 
 The product development IS NOT endangered... but consideration MUST be done before public release!
 
+### 9.1.2025
+
+Started building the database file... A SINGLE FILE!
+
+    - Using a database setup (mongodb? SQL?) WOULD be definitely better... Considere later!
+
+    - For now, we only need "string-like" JSON file
+
+    - This file (db.json) will be moved to back end on a later date
+
+    - Basic functionality JUST needed now! Obtain tags, name, everything else from the db!
+
+Single source of truth! Currently, the database will hold length and size of the video... but TECHNICALLY that can ALWAYS be obtained from the video!
+
+In addition, ID is just a rolling number. Create "an algorithm" that generates an unique ID!
+
+The made database should be updatable!
+
+    - "Run x.js or x.py file, and it checks the database and adds new videos to it"
+
+    - There needs to be checks! Date of video file generation, video length, id?
+
+    - Difficult to create... IT CANNOT be tied to video path! (If file changes place, it should not be re-generated)
+
+    - What if a second video exists with similar length and date... A copy! Then the path is the only solution
+
+    - Mark these videos and DO NOT add them to the database... until they are confirmed and allowed(?)
+
+    - This more complex check is developed when back end development begins!
+
+The database is "silly" now (because of the test videos)
+
+    - "Ignore" the fact that samples 2 - 6 have "reversed" the preview and full video

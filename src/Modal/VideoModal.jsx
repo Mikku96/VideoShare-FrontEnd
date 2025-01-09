@@ -9,7 +9,7 @@ import ReactPlayer from "react-player/file";
 export default function VideoModal({ chosenVideo, showVideo, setShowVideo, setChosenVideo }) {
 
     Modal.setAppElement("#root");
-
+    console.log(showVideo);
     // A switch for the button to show full video or preview
     const[fullVideoShow, setFullVideoShow] = useState(false);
     const[switchButtonName, setSwitchButtonName] = useState("Full video");
@@ -29,25 +29,29 @@ export default function VideoModal({ chosenVideo, showVideo, setShowVideo, setCh
         setShowVideo(false);
         setFullVideoShow(false);
         setChosenVideo({
-            id: 0, 
-            thumbnail:"", 
-            name: "", 
-            stats: {views: 0, likes: 0},
-            state: [false, false,false],
-            tags: [""],
-            previewUrl: ``,
-            fullUrl: ``
-          });
+            "id": "", 
+            "originalName": "",
+            "definedName": "",
+            "stats": {views: 0, likes: 0},
+            "tags":[],
+            "comments":[],
+            "thumbnail":"",
+            "previewVideo":"",
+            "fullURL":"",
+            "videoLength":"",
+            "videoSize":"",
+            "videoDate":""
+        });
     }
 
     const handleDownload = () => {
-        fetch(chosenVideo.fullUrl)
+        fetch(chosenVideo.fullURL)
           .then((response) => response.blob())
           .then((blob) => {
             const url = window.URL.createObjectURL(new Blob([blob]));
             const link = document.createElement("a");
             link.href = url;
-            link.download = chosenVideo.fullUrl.split("/")[chosenVideo.fullUrl.split("/").length - 1]
+            link.download = chosenVideo.fullURL.split("/")[chosenVideo.fullURL.split("/").length - 1]
             || "downloaded-file";
             document.body.appendChild(link);
     
@@ -60,7 +64,6 @@ export default function VideoModal({ chosenVideo, showVideo, setShowVideo, setCh
             console.error("Error fetching the file:", error);
           });
       };
-
     return (
         <Modal isOpen={showVideo} scrollable style={{
             overlay: {
@@ -87,7 +90,11 @@ export default function VideoModal({ chosenVideo, showVideo, setShowVideo, setCh
             />
             <div className="flex-col">
                 <div className="flex justify-between">
-                    <h1 className="text-gray-50 text-3xl">{chosenVideo.name}</h1>
+                {(chosenVideo.definedName.length >= 3) ?
+                    <h1 className="text-white">{chosenVideo.definedName}</h1>
+                    :
+                    <h1 className="text-white">{chosenVideo.originalName}</h1>
+                }
                     <Button
                     buttonName={switchButtonName}
                     runFunction={() => switchShownVideo()}
@@ -99,11 +106,11 @@ export default function VideoModal({ chosenVideo, showVideo, setShowVideo, setCh
                     {fullVideoShow ?
                         <ReactPlayer 
                         controls = {true}
-                        url={chosenVideo.fullUrl}/>
+                        url={chosenVideo.fullURL}/>
                         :
                         <ReactPlayer 
                         controls = {true}
-                        url={chosenVideo.previewUrl}/>
+                        url={chosenVideo.previewVideo}/>
                     }
                     <TagHolder 
                     tags = {chosenVideo.tags}
