@@ -28,6 +28,7 @@ export default function Grid ( {filteredVideoInfos, setChosenVideo, howManyShown
               .filter((_, index) => howManyShown > index)
               .map((videoInfo) => (
                 <Thumbnail
+                  key = {videoInfo.id}
                   videoInfo={videoInfo}
                   setChosenVideo={setChosenVideo}
                 />

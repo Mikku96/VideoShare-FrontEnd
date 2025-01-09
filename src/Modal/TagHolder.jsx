@@ -14,7 +14,7 @@ export default function TagHolder ( {tags, add} ) {
             <ul className="flex flex-wrap gap-x-1 gap-y-1 text-pretty">
                 {tags
                 .map((tag) => (
-                    <li className="flex border-2 p-1 border-black bg-yellow-600 rounded-xl">
+                    <li key = {tag} className="flex border-2 p-1 border-black bg-yellow-600 rounded-xl">
                     <p className="">{tag.replace(/_/g," ")}</p>
                     <input type="button" value="❌" className="hover:cursor-pointer" onClick={(event) => addToRemoveList(event, tag)} />
                     
